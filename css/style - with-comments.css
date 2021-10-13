@@ -149,41 +149,34 @@ header .btn-toggle .line{
     font-size: 1.2rem;
 }
 
-.about-section{
-    padding: 80px 0;
-}
-
-.about-flex{
+.about-section {
+    padding: 5rem 0;
+  }
+  
+  .flex-container {
     display: flex;
+    /* display:flex makes vertical list to turn horizontal */
+    justify-content: space-between; 
+    /* justify-contents creates a margin between boxes */
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* align-items pushes the content of div to the center */
+    /* align-content pushes the div to the center */
     flex-direction: row;
-}
-.box{
-    /* min-height: auto; */
+    flex-wrap: wrap;
+  }
+  
+  .box {
     width: 45%;
-}
-
-/* .box-img{
-    width: 45%;
-} */
-
-.about-title{
+  }
+  
+  .content-box .content {
     margin: 2rem 0;
-font-size: 2.7rem;
-}
-
-.about-details{
-    line-height: 1.2rem ;
-    margin: 2rem 0;
-}
-
-.details{
-    /* font-weight: bold; */
-    /* width: 45%; */
-}
-
+  }
+  
+  .content-box .section-title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
 
 
 
@@ -239,30 +232,24 @@ font-size: 2.7rem;
         font-size: 1rem;
     }
 
-    .about-section{
-        padding: 5rem 0;
-    }
-    
-    .about-flex{
-        /* use abou-flex-container will make your class beheviour static or simply will not work as expected */
-       justify-content: center;
-        flex-wrap: wrap;
+    .flex-container {
         flex-direction: column;
-    }
-    .box{
-        width: 100%;
-    }
+        /* makes the smaller screen to avoid overlapping */
+        justify-content: center;
+      }
     
-    .about-title{
-        margin: 2rem 0;
-    font-size: 2.7rem;
-    }
-    
-    .about-details{
-        line-height: 1.2rem ;
-        margin: 2rem 0;
+      
+    .box {
+      width: 100%;
+      /* makes the contents to avoid scrolling side ways */
     }
     
-
+      .content-box {
+        margin-top: 2rem;
+      }
     
+      .content-box .section-title {
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
 }
